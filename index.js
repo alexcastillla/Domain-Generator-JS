@@ -4,7 +4,7 @@ var noun = ["jogger", "racoon"];
 var www = "www.";
 var network = [".com", ".net", ".us", ".io"];
 
-function generadordewebs() {
+function generadordedominios() {
   let resultado = [];
 
   for (a = 0; a < pronoun.length; a++) {
@@ -16,7 +16,8 @@ function generadordewebs() {
       }
     }
   }
+
   return resultado;
 }
 
-console.log(generadordewebs());
+console.log(generadordedominios());
