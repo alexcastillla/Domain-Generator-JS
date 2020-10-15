@@ -1,10 +1,20 @@
-/* eslint-disable */
+var pronoun = ["the", "our"];
+var adj = ["great", "big"];
+var noun = ["jogger", "racoon"];
+var www = " www.";
+var network = [".com", ".net", ".us", ".io"];
 
-import "../assets/img/rigo-baby.jpg";
-import "../assets/img/4geeks.ico";
-//import 'breathecode-dom'; //DOM override to make JS easier to use
-import "../style/index.scss";
+function generadordedominios() {
+  let resultado = [];
 
-window.onload = function() {
-  console.log("Hello Rigo from the console!");
-};
+  for (a = 0; a < pronoun.length; a++) {
+    for (b = 0; b < adj.length; b++) {
+      for (c = 0; c < noun.length; c++) {
+        for (d = 0; d < network.length; d++) {
+          resultado.push(www.concat(pronoun[a], adj[b], noun[c], network[d]));
+        }
+      }
+    }
+  }
+  document.querySelector("#answergenerator").innerHTML = resultado;
+}
