@@ -4,7 +4,7 @@ const nouns = ["jogger", "racoon"];
 const www = " www.";
 const networks = [".com", ".net", ".us", ".io"];
 
-function generadordedominios() {
+window.onclick = function(){
   let resultado = [];
 
   for (pronoun = 0; pronoun < pronouns.length; pronoun++) {
